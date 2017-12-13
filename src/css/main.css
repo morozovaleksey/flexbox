@@ -32,35 +32,25 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  height: 200px;
+  max-width: 1000px;
+  margin: 20px auto;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-align-content: stretch;
+      -ms-flex-line-pack: stretch;
+          align-content: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap; }
 
-.fl1 {
-  font-size: 8px; }
-
-.fl2 {
-  font-size: 10px; }
-
-.fl3 {
-  font-size: 12px; }
-
-.fl4 {
-  font-size: 14px; }
-
-.fl5 {
-  font-size: 16px; }
-
-.fl6 {
-  font-size: 18px; }
+.bl {
+  height: 100px; }
