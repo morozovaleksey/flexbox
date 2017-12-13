@@ -9,7 +9,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
     autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-    return gulp.src('src/sass/**/*.sass') // Берем источник
+    return gulp.src('src/sass/**/*.scss') // Берем источник
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('src/css')) // Выгружаем результата в папку src/css
@@ -42,7 +42,7 @@ gulp.task('css-libs', ['sass'], function() {
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
-    gulp.watch('src/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
+    gulp.watch('src/sass/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
     gulp.watch('src/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
     gulp.watch('src/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 });
