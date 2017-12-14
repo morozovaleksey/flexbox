@@ -25,36 +25,165 @@ img{
   border-radius: 3px;
   margin: 20px;
 }
+
+//////////////////////
+
+// //пример 1
+//.main {
+//  display: flex;
+//  //свойства которые не работают с flex
+//  //columns:;
+//  //float: ;
+//  //clear: ;
+//  //vertical-align: ;
+//  //Особенность margin складывается у блоков-элементов flex
+//  height: 500px;
+//
+//}
+//.bl {
+//  height: 20px;
+//  margin: auto; /*центрирует по горизонтали и вертикали */
+//}
+
+//пример 2
+
+//.main {
+//  display: flex;
+//  height: 500px;
+//  //направление оси
+//  flex-direction: row;
+//  //flex-direction: column;
+//  //flex-direction: column-reverse;
+//  //flex-direction: row-reverse;
+//  //как будут распологаться блоки на главной оси
+//  //justify-content: flex-start;
+//  //justify-content: flex-end;
+//  //justify-content: space-between;
+//  //justify-content: space-around;
+//  justify-content: center;
+//  //выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении.
+//  //align-items: stretch;
+//  align-items: flex-start;
+//  //align-items: flex-end;
+//  //align-items: baseline;
+//}
+//.bl {
+//
+//}
+//
+//
+//.fl1 {
+//  line-height: 8px;
+//}
+//.fl2 {
+//  line-height: 16px;
+//}
+//.fl3 {
+//  line-height: 24px;
+//}
+//.fl4 {
+//  line-height: 12px;
+//}
+//.fl5 {
+//  line-height: 10px;
+//}
+//.fl6 {
+//  line-height: 20px;
+//}
+
+////пример 3
+//.main {
+//  display: flex;
+//  height: 200px;
+//  max-width: 1000px;
+//  flex-direction: row;
+//  justify-content: center;
+//  //align-items: flex-start;
+//  align-items: stretch;
+//  //переносы блоков в новый рядов
+//  //flex-wrap: wrap;
+//  flex-wrap: wrap;
+//  //align-content: center;
+//  //align-content: space-around;
+//  //align-content: space-between;
+//  //align-content: flex-start;
+//  //align-content: flex-end;
+//  align-content: stretch;
+//  //flex-direction, flex-wrap
+//  flex-flow:column wrap;
+//  //flex-flow:row wrap;
+//}
+//.bl {
+//  //width: 250px;
+//  height: 100px;
+//}
+//
+//
+//.fl1 {
+//
+//}
+//.fl2 {
+//
+//}
+//.fl3 {
+//
+//}
+//.fl4 {
+//
+//}
+//.fl5 {
+//
+//}
+//.fl6 {
+//
+//}
+
+//пример 4
 .main {
   display: flex;
-  height: 200px;
-  max-width:1000px;
+  //height: 500px;
+  max-width: 1000px;
   margin: 20px auto;
-  //flex-direction: row;
   justify-content: center;
   align-items: stretch;
-  //flex-wrap: wrap;
   align-content: stretch;
-  flex-flow: column wrap;
+  flex-flow:row wrap;
+  padding: 0;
 }
 .bl {
-  height: 100px;
+  //padding: 0;
+  //margin: 0;
+  //border: 0;
+  //определяет основу флекса, которая является начальным размером элемента
+  //flex-basis: auto;
+  //flex-basis: 500px;
+  //flex-grow определяет, какую часть свободного пространства может занять контейнер, в соотношении с другими контейнерами
+  //flex-grow: 1;
+  //Устанавливает коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению к другим флексам, чтобы разместить все элементы в одну строку.
+  //flex-shrink: 1;
+  flex: 1 1 200px;
 }
-.fl1 {
 
+
+.fl1 {
+  background: #2228ff;
+  //flex-grow: 3;
+  //flex-shrink: 3;
 }
 .fl2 {
-
+  background: #81ff2e;
+  //flex-grow: 2;
+  //flex-shrink: 2;
 }
 .fl3 {
-
+  background: #ffb672;
 }
 .fl4 {
-
+  background: #ff5fd8;
 }
 .fl5 {
-
+  background: #f0fff1;
 }
 .fl6 {
-
+  background: #ffff2c;
 }
