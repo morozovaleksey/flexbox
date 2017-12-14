@@ -21,7 +21,7 @@ img{
 .bl{
   padding: 5px 10px;
   border:1px solid #ddd;
-  background: #fffde1;
+  background: #fefefe;
   border-radius: 3px;
   margin: 20px;
 }
@@ -138,52 +138,118 @@ img{
 //
 //}
 
-//пример 4
+////пример 4
+//.main {
+//  display: flex;
+//  //height: 500px;
+//  max-width: 1000px;
+//  margin: 20px auto;
+//  justify-content: center;
+//  align-items: stretch;
+//  align-content: stretch;
+//  flex-flow:row wrap;
+//  padding: 0;
+//}
+//.bl {
+//  //padding: 0;
+//  //margin: 0;
+//  //border: 0;
+//  //определяет основу флекса, которая является начальным размером элемента
+//  //flex-basis: auto;
+//  //flex-basis: 500px;
+//  //flex-grow определяет, какую часть свободного пространства может занять контейнер, в соотношении с другими контейнерами
+//  //flex-grow: 1;
+//  //Устанавливает коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению к другим флексам, чтобы разместить все элементы в одну строку.
+//  //flex-shrink: 1;
+//  flex: 1 1 200px;
+//}
+//
+//
+//.fl1 {
+//  background: #2228ff;
+//  //flex-grow: 3;
+//  //flex-shrink: 3;
+//}
+//.fl2 {
+//  background: #81ff2e;
+//  //flex-grow: 2;
+//  //flex-shrink: 2;
+//}
+//.fl3 {
+//  background: #ffb672;
+//}
+//.fl4 {
+//  background: #ff5fd8;
+//}
+//.fl5 {
+//  background: #f0fff1;
+//}
+//.fl6 {
+//  background: #ffff2c;
+//}
+
+//пример 5
 .main {
   display: flex;
-  //height: 500px;
   max-width: 1000px;
   margin: 20px auto;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
   flex-flow:row wrap;
-  padding: 0;
+
 }
 .bl {
-  //padding: 0;
-  //margin: 0;
-  //border: 0;
-  //определяет основу флекса, которая является начальным размером элемента
-  //flex-basis: auto;
-  //flex-basis: 500px;
-  //flex-grow определяет, какую часть свободного пространства может занять контейнер, в соотношении с другими контейнерами
-  //flex-grow: 1;
-  //Устанавливает коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению к другим флексам, чтобы разместить все элементы в одну строку.
-  //flex-shrink: 1;
-  flex: 1 1 200px;
+  flex: 1 1 300px;
+  text-align: center;
+  display: flex;
+  flex-flow:row wrap;
 }
 
 
 .fl1 {
-  background: #2228ff;
-  //flex-grow: 3;
-  //flex-shrink: 3;
+  flex: 1 1 100%;
 }
 .fl2 {
-  background: #81ff2e;
-  //flex-grow: 2;
-  //flex-shrink: 2;
+
 }
 .fl3 {
-  background: #ffb672;
+
 }
 .fl4 {
-  background: #ff5fd8;
+
 }
 .fl5 {
-  background: #f0fff1;
+
 }
 .fl6 {
-  background: #ffff2c;
+  flex: 1 1 100%;
+}
+
+h3 {
+  color: #406cd0;
+  margin: 0 10px 0 0;
+  font-size: 1.1em;
+}
+a{
+  &.button {
+    background: #406cd0;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  &.button:hover {
+    background: #c70000;
+  }
+}
+.image{
+  margin:10px;
+  flex: 1 1 200px;
+  img {width: 100%; height: auto;}
+}
+.text {
+  margin: 10px;
+  flex: 1 1 150px;
 }
